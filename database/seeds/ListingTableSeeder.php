@@ -26,6 +26,7 @@ class ListingTableSeeder extends Seeder
             $listing->in_time = [true, false][rand(0, 1)];
             $listing->cancelled = [true, false][rand(0, 1)];
             $listing->deadline = $faker->date();
+            $listing->save();
         }
     }
     }

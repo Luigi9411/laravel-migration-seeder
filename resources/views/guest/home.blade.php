@@ -12,20 +12,18 @@
         @foreach ($listings as $listing)
             <li>
                 <h3>
-                    {{ $listing->company }}
+                    {{ $listing->company }} -
+                    {{$listing->departure_station}} -
+                    {{$listing->arrival_station}} -
+                    {{$listing->departure_time}} -
+                    {{$listing->arrival_time}} -
+                    {{$listing->train_code}} -
+                    {{$listing->carriage_number}} -
+                    {{$listing->in_time}} -
+                    {{$listing->cancelled}} -
+                    {{$listing->deadline}}
                 </h3>
-                {{-- <h4>
-                    {{ $movie->original_title }}
-                </h4>
-                <h5>
-                    {{ $movie->nationality }}
-                </h5>
-                <h6>
-                    {{ $movie->date }}
-                </h6>
-                  <div>
-                    {{ $movie->vote }}</li>
-                </div> --}}
+
         @endforeach
     </ol>
 </body>
